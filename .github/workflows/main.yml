@@ -6,4 +6,12 @@ jobs:
     steps:
       - name: First step
         run: echo 'This is first step'
+      - name: Checkout code and install
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm run lint
+      - name: build your code
+        run: npm run build
+      - name: test your code
+        run: npm run test
 
