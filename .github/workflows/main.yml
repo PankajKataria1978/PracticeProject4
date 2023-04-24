@@ -9,7 +9,7 @@ jobs:
       - name: Checkout code and install
         uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm run lint
+        run: npm install
       - name: build your code
         run: npm run build
       - name: test your code
