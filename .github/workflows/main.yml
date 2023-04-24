@@ -1,1 +1,9 @@
-name: npm build and linting 
+name: npm build and linting
+on: workflow_dispatch
+jobs:
+  firstjob:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: First step
+        run: echo 'This is first step'
+
